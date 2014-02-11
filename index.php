@@ -11,10 +11,12 @@
     <title>Cover Template for Bootstrap</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
+    <!-- Optional theme -->
+    <!-- <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css"> -->
 
     <!-- Custom styles for this template -->
-    <link href="cover.css" rel="stylesheet">
+    <link href="styles/cover.css" rel="stylesheet">
 
     <!-- Just for debugging purposes. Don't actually copy this line! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
@@ -34,9 +36,10 @@
 
         <div class="cover-container">
 
+              <!-- 
           <div class="masthead clearfix">
             <div class="inner">
-              <h3 class="masthead-brand">Cover</h3>
+              <h1 class="masthead-brand">Cover</h1>
               <ul class="nav masthead-nav">
                 <li class="active"><a href="#">Home</a></li>
                 <li><a href="#">Features</a></li>
@@ -44,13 +47,26 @@
               </ul>
             </div>
           </div>
+              -->
 
           <div class="inner cover">
-            <h1 class="cover-heading">Cover your page.</h1>
+            <h1 class="cover-heading">Over</h1>
+            <p class=""><br /></p>
             <p class="lead">Cover is a one-page template for building simple and beautiful home pages. Download, edit the text, and add your own fullscreen background photo to make it your own.</p>
+            <div class="input-group input-group-lg">
+              <span class="input-group-addon glyphicon glyphicon-globe"></span>
+              <input type="text" class="form-control" placeholder="Site - eg. http://example.com">
+            </div>
+            <p class=""></p>
+            <div class="input-group input-group-lg">
+              <span class="input-group-addon glyphicon glyphicon-picture"></span>
+              <input type="text" class="form-control" placeholder="Overlay image - http://img.example.com/img.jpg">
+            </div>
+            <p class=""></p>
             <p class="lead">
-              <a href="#" class="btn btn-lg btn-default">Learn more</a>
+              <input type="submit" value="GO!" class="btn btn-lg btn-default" />
             </p>
+
           </div>
 
           <div class="mastfoot">
@@ -69,7 +85,7 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
-    <script src="../../dist/js/bootstrap.min.js"></script>
-    <script src="../../assets/js/docs.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+    <script src="scripts/docs.min.js"></script>
   </body>
 </html>
