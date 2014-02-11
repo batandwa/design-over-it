@@ -1,4 +1,7 @@
-<!DOCTYPE html>
+<?php 
+  $webpage_url = isset($_GET['webpage_url']) && !empty($_GET['webpage_url']) ? $_GET['webpage_url'] : null;
+  $image_url = isset($_GET['image_url']) && !empty($_GET['image_url']) ? $_GET['image_url'] : null;
+?><!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -53,19 +56,21 @@
             <h1 class="cover-heading">Over</h1>
             <p class=""><br /></p>
             <p class="lead">Cover is a one-page template for building simple and beautiful home pages. Download, edit the text, and add your own fullscreen background photo to make it your own.</p>
-            <div class="input-group input-group-lg">
-              <span class="input-group-addon glyphicon glyphicon-globe"></span>
-              <input type="text" class="form-control" placeholder="Site - eg. http://example.com">
-            </div>
-            <p class=""></p>
-            <div class="input-group input-group-lg">
-              <span class="input-group-addon glyphicon glyphicon-picture"></span>
-              <input type="text" class="form-control" placeholder="Overlay image - http://img.example.com/img.jpg">
-            </div>
-            <p class=""></p>
-            <p class="lead">
-              <input type="submit" value="GO!" class="btn btn-lg btn-default" />
-            </p>
+            <form action="index.php" method="get">
+              <div class="input-group input-group-lg">
+                <span class="input-group-addon glyphicon glyphicon-globe"></span>
+                <input type="text" class="form-control" name="webpage_url" placeholder="Site - eg. http://example.com">
+              </div>
+              <p class=""></p>
+              <div class="input-group input-group-lg">
+                <span class="input-group-addon glyphicon glyphicon-picture"></span>
+                <input type="text" class="form-control" name="image_url" placeholder="Overlay image - http://img.example.com/img.jpg">
+              </div>
+              <p class=""></p>
+              <p class="lead">
+                <input type="submit" value="GO!" class="btn btn-lg btn-default" />
+              </p>
+            </form>
 
           </div>
 
