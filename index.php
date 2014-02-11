@@ -37,47 +37,50 @@
   </head>
 
   <body>
+    <?php if(!empty($webpage_url) && !empty($image_url)): ?>
+      <img src="http://i.imgur.com/LBU1as4.jpg" class="overlay" alt="Overlay image">
+      <iframe src="http://www.aveng-acs.co.za/" frameborder="0"></iframe>
+    <?php else: ?>
     <div class="site-wrapper">
 
       <div class="site-wrapper-inner">
-        <img src="http://i.imgur.com/LBU1as4.jpg" class="overlay" alt="Overlay image">
-        
-        <div class="cover-container">
+          <div class="cover-container">
 
 
-          <div class="inner cover">
-            <h1 class="cover-heading">Over</h1>
-            <p class=""><br /></p>
-            <p class="lead">Cover is a one-page template for building simple and beautiful home pages. Download, edit the text, and add your own fullscreen background photo to make it your own.</p>
-            <form action="index.php" method="get">
-              <div class="input-group input-group-lg">
-                <span class="input-group-addon glyphicon glyphicon-globe"></span>
-                <input type="text" class="form-control" name="webpage_url" placeholder="Site - eg. http://example.com">
-              </div>
-              <p class=""></p>
-              <div class="input-group input-group-lg">
-                <span class="input-group-addon glyphicon glyphicon-picture"></span>
-                <input type="text" class="form-control" name="image_url" placeholder="Overlay image - http://img.example.com/img.jpg">
-              </div>
-              <p class=""></p>
-              <p class="lead">
-                <input type="submit" value="GO!" class="btn btn-lg btn-default" />
-              </p>
-            </form>
+            <div class="inner cover">
+              <h1 class="cover-heading">Over</h1>
+              <p class=""><br /></p>
+              <p class="lead">Cover is a one-page template for building simple and beautiful home pages. Download, edit the text, and add your own fullscreen background photo to make it your own.</p>
+              <form action="index.php" method="get">
+                <div class="input-group input-group-lg">
+                  <span class="input-group-addon glyphicon glyphicon-globe"></span>
+                  <input type="text" class="form-control" name="webpage_url" placeholder="Site - eg. http://example.com">
+                </div>
+                <p class=""></p>
+                <div class="input-group input-group-lg">
+                  <span class="input-group-addon glyphicon glyphicon-picture"></span>
+                  <input type="text" class="form-control" name="image_url" placeholder="Overlay image - http://img.example.com/img.jpg">
+                </div>
+                <p class=""></p>
+                <p class="lead">
+                  <input type="submit" value="GO!" class="btn btn-lg btn-default" />
+                </p>
+              </form>
 
-          </div>
-
-          <div class="mastfoot">
-            <div class="inner">
-              <p>Cover template for <a href="http://getbootstrap.com">Bootstrap</a>, by <a href="https://twitter.com/mdo">@mdo</a>.</p>
             </div>
-          </div>
 
-        </div>
+            <div class="mastfoot">
+              <div class="inner">
+                <p>Cover template for <a href="http://getbootstrap.com">Bootstrap</a>, by <a href="https://twitter.com/mdo">@mdo</a>.</p>
+              </div>
+            </div>
+
+          </div>
 
       </div>
 
     </div>
+    <?php endif; ?>
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
