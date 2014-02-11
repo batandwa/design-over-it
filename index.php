@@ -20,6 +20,7 @@
 
     <!-- Custom styles for this template -->
     <link href="styles/cover.css" rel="stylesheet">
+    <link href="styles/custom.css" rel="stylesheet">
 
     <!-- Just for debugging purposes. Don't actually copy this line! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
@@ -29,28 +30,20 @@
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+
+    <style>
+
+    </style>
   </head>
 
   <body>
-
     <div class="site-wrapper">
 
       <div class="site-wrapper-inner">
-
+        <img src="http://i.imgur.com/LBU1as4.jpg" class="overlay" alt="Overlay image">
+        
         <div class="cover-container">
 
-              <!-- 
-          <div class="masthead clearfix">
-            <div class="inner">
-              <h1 class="masthead-brand">Cover</h1>
-              <ul class="nav masthead-nav">
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="#">Features</a></li>
-                <li><a href="#">Contact</a></li>
-              </ul>
-            </div>
-          </div>
-              -->
 
           <div class="inner cover">
             <h1 class="cover-heading">Over</h1>
@@ -92,5 +85,7 @@
     <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
     <script src="scripts/docs.min.js"></script>
+    <script src="scripts/drags.js"></script>
+    <script src="scripts/custom.js"></script>
   </body>
 </html>
